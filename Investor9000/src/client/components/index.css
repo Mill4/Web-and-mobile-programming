@@ -1,0 +1,408 @@
+.center {
+    text-align-last: center;
+    font-family: 'Roboto', sans-serif;
+}
+.mydiv {
+    margin: auto;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #f8f7f7;
+}
+
+section {
+    background: #c0c0c0;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    font-family: 'Roboto', sans-serif;
+    border: 0.1px solid black;
+}
+
+table {
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    padding: 10px 0 10px 10px;
+}
+#title {
+    text-align: left;
+    margin-left: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+
+th,
+td,
+tbody {
+    border-collapse: collapse;
+    font-family: 'Roboto', sans-serif;
+    padding: 5px;
+    text-align: left;
+}
+caption {
+    text-align: left;
+    margin: 5px 0 5px 1px;
+    padding: 5px;
+}
+
+middlesection {
+    flex-direction: row;
+}
+
+form {
+    padding: 100px;
+    text-align: left;
+    margin: auto;
+    display: table;
+    width: 200px;
+    padding: 10px 10px 10px 10px;
+    font-family: 'Roboto', sans-serif;
+}
+
+TextField[type='text'] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+TextField[type='password'] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+input[type='submit'] {
+    width: 100%;
+    background-color: #4caf50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+}
+
+input[type='button'] {
+    width: 100%;
+    background-color: #4caf50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+}
+
+input[type='submit']:hover {
+    background-color: #45a049;
+}
+
+#sell {
+    width: 50px;
+    background-color: #4caf50;
+    color: white;
+    padding: 5px;
+    margin: 0 0 8px;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+}
+
+button[type='add'] {
+    width: 3%;
+    background-color: #4caf50;
+    color: white;
+    padding: 10px;
+    margin: ;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* button[type='verify'] {
+    width: 8%;
+    background-color: #4caf50;
+    color: white;
+    padding: 10px;
+    margin: 0 0 8px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+} */
+
+#verify {
+    width: 8%;
+    background-color: #4caf50;
+    color: white;
+    padding: 10px;
+    margin: 0 0 8px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+}
+
+button[type='submit'] {
+    width: 100%;
+    background-color: #4caf50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+}
+
+button[type='login']:hover {
+    background-color: #45a049;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+/* -- quantity box -- */
+
+.quantity {
+    display: inline-block;
+}
+
+.quantity .input-text.qty {
+    width: 15px;
+    height: 39px;
+    padding: 0 5px;
+    text-align: center;
+    background-color: transparent;
+    border: 1px solid #efefef;
+}
+
+.quantity.buttons_added {
+    text-align: left;
+    position: relative;
+    white-space: nowrap;
+    vertical-align: top;
+}
+
+.quantity.buttons_added input {
+    display: inline-block;
+    margin: 0;
+    vertical-align: top;
+    box-shadow: none;
+}
+
+.quantity.buttons_added .minus,
+.quantity.buttons_added .plus {
+    padding: 3px;
+    height: 41px;
+    background-color: #afacac;
+    border: 1px solid #efefef;
+    cursor: pointer;
+}
+
+.quantity.buttons_added .minus {
+    border-right: 0;
+}
+
+.quantity.buttons_added .plus {
+    border-left: 0;
+}
+
+.quantity.buttons_added .minus:hover,
+.quantity.buttons_added .plus:hover {
+    background: #eeeeee;
+}
+
+.quantity input::-webkit-outer-spin-button,
+.quantity input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    margin: 0;
+}
+
+.quantity.buttons_added .minus:focus,
+.quantity.buttons_added .plus:focus {
+    outline: none;
+}
+
+/*panel*/
+
+@import url('https://fonts.googleapis.com/css?family=Barlow:400,400i,700');
+
+:root {
+    --panel-border: 2px solid rgba(23, 24, 87, 0.2);
+}
+
+html * {
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+h1,
+h2,
+h3 {
+    margin-top: 2rem;
+    margin-bottom: 0;
+}
+
+.title {
+    margin-bottom: 0;
+}
+
+.lead {
+    margin-top: 0;
+    margin-bottom: 4rem;
+}
+
+.panel {
+    margin-bottom: 1rem;
+
+    h2 {
+        font-size: 1.25rem;
+        margin: 0;
+    }
+}
+
+.panel__header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    text-align: left;
+    border: var(--panel-border);
+    font-weight: 700;
+    color: inherit;
+}
+
+.panel__header-icon {
+    width: 1.25rem;
+    height: 1.25rem;
+    margin-left: auto;
+}
+
+button.panel__header {
+    cursor: pointer;
+    border-radius: 0;
+
+    &:focus,
+    &:hover {
+        outline: none;
+        background-color: navy;
+        color: white;
+        border-color: navy;
+    }
+}
+
+.panel__body {
+    border-right: var(--panel-border);
+    border-bottom: var(--panel-border);
+    border-left: var(--panel-border);
+
+    > *:first-child {
+        margin-top: 0;
+    }
+
+    > *:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.panel__body,
+.panel__header {
+    padding: 1rem;
+}
+
+.panel__body[aria-hidden='true'] {
+    display: none;
+}
+
+.panel-group {
+    .panel {
+        margin-bottom: 0;
+    }
+
+    .panel:not(:first-child) .panel__header {
+        border-top: none;
+    }
+}
+
+/* increment */
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    user-select: none;
+}
+
+/* Actual input */
+
+.input-number {
+    position: relative;
+    width: 100px;
+    height: 40px;
+    background-color: transparent;
+    overflow: hidden;
+    border-radius: 20px;
+    margin: 2px;
+}
+
+.input-number span {
+    position: absolute;
+    left: 50%;
+    margin-left: -20px;
+    display: inline-block;
+    background-color: rgb(247, 240, 240);
+    height: 100%;
+    width: 40px;
+    border-radius: 20px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 16px;
+    color: #6c6dff;
+    letter-spacing: -1px;
+}
+
+.input-number button {
+    display: inline-block;
+    width: 50px;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: rgba(133, 126, 126, 0.2);
+    transition: background-color 0.2s ease;
+}
+
+.input-number button:nth-of-type(1) {
+    padding-right: 20px;
+}
+
+.input-number button:nth-of-type(2) {
+    padding-left: 20px;
+}
+
+.input-number button:hover {
+    background-color: rgba(255, 255, 255, 0.25);
+}
